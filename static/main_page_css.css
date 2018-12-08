@@ -1,0 +1,42 @@
+body{
+    background-size: cover;
+    background-origin: content-box;
+    background-image: url("background2.jpg");
+}
+
+h1{
+    display: block;
+    text-shadow: 2px 2px 5px black;
+    text-align: center;
+    color:MediumSeaGreen;
+    size: 32;
+}
+
+h2{
+    display: block;
+    text-shadow: 2px 2px 5px black;
+    color:MediumSeaGreen;
+    size: 28;
+    margin-left: 50px;
+}
+
+button{
+    border:2px black;
+    color:MediumSeaGreen;
+    border-radius: 5px;
+    font-size: 20px;
+    display: inline-block;
+    background-color: darkgray;
+    text-shadow: 3px 3px 6px black;
+    margin-left: 50px;
+}
+
+iframe{
+    display: block;
+    transition: width 2s, height 4s;
+    margin-top: 40px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin-left: 50px;
+}
