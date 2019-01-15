@@ -2,17 +2,37 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="main_page_css.css">
+        <script 
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/react@15/dist/react.js"></script>
+  <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
         <title> </title>
     </head>
     <body>
 <h1>YouTube Playlist Manager</h1>
 
-    <h2>Get your youtube playlist!</h2>
+    <h2>Merge your youtube playlists now!</h2>
+    <div class="inputs" style="text-align:center;"><b>Api Key: </b><input type="text" id="api_key" size="70"/></div><br>
+    <div class="inputs" style="text-align:center;"><b>Playlist Id: </b><input type="text" id="playlist_id" size="68"/></div><br>
+    <div class="inputs" style="text-align:center; "><b>Search: </b><input type="text" id="search_title" size="20"/></div><br>
+    <button id="send_credentials">Send credentials</button>
     <button id="get_playlist">Load your YouTube playlist</button>
+    <button id="get_help">How does it work?</button>
+    <button id="clear_videos">Clear list</button>
+    <button id="search_video" style="float:center">Search</button>
+    <div id="root"></div>
+    <script type="text/javascript" src="basic_ajax.js"></script>
 
-<div id="playlist-info"></div>
-
-<script type="text/javascript" src="basic_ajax.js"></script>
+<script type="text/babel" src="client.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        console.log('Hello from JQuery')
+    })
+</script>
 
     </body>
 </html>

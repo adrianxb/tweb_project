@@ -4,31 +4,60 @@ body{
     background-image: url("background2.jpg");
 }
 
-h1{
+p{
+    text-align: center;
     display: block;
     text-shadow: 2px 2px 5px black;
+    color:white;
+    size: 28;
+    margin-left: 50px;
+}
+h1{
+    width: 100%;
+    top:0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black;
     text-align: center;
-    color:MediumSeaGreen;
+    color:white;
     size: 32;
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 6s;
+    -name: example;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+  0%   {background-color:rgba(255, 0, 0, 0.0);}
+  25%  {background-color:rgba(255, 0, 0, 1);}
+  50%  {background-color:red; }
+  75%  {background-color:red; }
+  100% {background-color:rgba(255, 0, 0, 0.0);}
 }
 
 h2{
     display: block;
     text-shadow: 2px 2px 5px black;
-    color:MediumSeaGreen;
+    color:white;
     size: 28;
     margin-left: 50px;
 }
 
 button{
-    border:2px black;
-    color:MediumSeaGreen;
+    border:2px white;
+    color:white;
+    padding: 10px;
     border-radius: 5px;
     font-size: 20px;
     display: inline-block;
     background-color: darkgray;
     text-shadow: 3px 3px 6px black;
     margin-left: 50px;
+    margin-top: 10px;
+}
+
+button:hover{
+        opacity: 0.8;
+        background-color: red;
 }
 
 iframe{
@@ -39,4 +68,13 @@ iframe{
     height: 300px;
     text-align: center;
     margin-left: 50px;
+    border-color: red;
+}
+
+b{
+    color: white;
+}
+
+div:not(.inputs):hover{
+    opacity: 0.92;
 }
